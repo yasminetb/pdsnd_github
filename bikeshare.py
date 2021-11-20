@@ -75,7 +75,7 @@ def main():
         comn_station=df.groupby(['Start Station','End Station']).size().idxmax()
         print('most popular trip: ', comn_station)
         sum=0
-        for time in df['Trip Duration'] :
+        for time in df['Trip Duration'] : #made a change
             total=sum +time
         print('the total travel time  is:' ,total)
         avrg=df['Trip Duration'].mean()
@@ -85,7 +85,7 @@ def main():
         for types in df['User Type']:
               if types=='Customer':
                 cpt=cpt+1
-        print('number of customer is :',cpt)
+        print('number of customer is :',cpt) #CHICAGO
         cpt1=0
         for types in df['User Type']:
              if types=='Subscriber':
@@ -110,7 +110,7 @@ def main():
             x=min(df['Birth Year'])
             print('the erliest is :',x)    
             y=max(df['Birth Year'])
-            print('the most recent is:',y)
+            print('the most recent is:',y) 
             birth_year=df['Birth Year'].mode()[0]
             print('most recent: ', birth_year)
         res = ''
