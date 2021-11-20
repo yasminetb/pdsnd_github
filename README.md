@@ -4,10 +4,10 @@
 2021-11-20
 
 ### Project Title
-bikeshare
+Bikeshare project
 
 ### Description
-statistic of bikes users in each city
+statistic of bikes users in each city chicago and washington and new york city
 
 ### Files used
 chicago.csv 
